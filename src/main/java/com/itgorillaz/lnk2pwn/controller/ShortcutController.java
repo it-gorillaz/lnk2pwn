@@ -46,10 +46,8 @@ public class ShortcutController {
         Integer iconIndex = shortcut.getIconIndex();
         String vbsFileName = String.valueOf(shortcut.getVbsFileName());
         String commandOuput = String.valueOf(shortcut.getCommandOuput());
-        String outputPath = String.valueOf(shortcut.getOutputPath());
-        
-        String linkName = String.valueOf(shortcut.getFileName())
-                .concat(String.valueOf(shortcut.getFakeExtension()));
+        String outputPath = String.valueOf(shortcut.getOutputPath());		
+        String linkName = fileName.concat(fakeExtension);
         
         LOGGER.info(String.format("File Name: %s", fileName));
         LOGGER.info(String.format("Fake Extension: %s", fakeExtension));
