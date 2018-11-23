@@ -10,8 +10,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.itgorillaz.lnk2pwn.view.form.FormPanel;
-
 @Configuration
 public class UACBypassConfig {
 
@@ -24,7 +22,7 @@ public class UACBypassConfig {
     public String getVBSSourceCode() {
         LOGGER.info("Loading VBS(UAC Bypass) source code");
         
-        InputStream in = FormPanel.class.getClassLoader()
+        InputStream in = UACBypassConfig.class.getClassLoader()
                 .getResourceAsStream(VBS_SOURCE_CODE_PATH);
         
         return new BufferedReader(new InputStreamReader(in))
