@@ -6,7 +6,7 @@ Malicious Shortcut(.lnk) Generator
 
 Motivation: https://medium.com/@tommelo/pwned-by-a-shortcut-b21473970944
 
-POC: https://www.youtube.com/watch?v=-D3AaC7V0sY
+POC: https://www.youtube.com/watch?v=EC5ei48MCG8
 
 ## License
 This is an open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
